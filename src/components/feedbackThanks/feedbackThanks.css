@@ -1,0 +1,38 @@
+.feedbackThanks {
+  text-align: center;
+  width: 380px;
+  padding: 20px;
+  background: hsl(212, 20%, 13%);
+  border-radius: 12px;
+}
+
+.feedbackThanks_img {
+  margin-bottom: 25px;
+}
+
+.feedbackThanks_selected {
+  display: inline;
+  margin-top: 20px;
+  padding: 5px 10px;
+  color: hsl(25, 60%, 52%);
+  background: hsl(213, 19%, 18%);
+  border-radius: 15px;
+}
+
+.feedbackThanks_thanks {
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin: 25px 0 10px;
+}
+
+.feedbackThanks_text {
+  font-weight: 200;
+  opacity: 80%;
+}
+
+@media (max-width: 400px) {
+  .feedbackThanks {
+    width: 100%;
+    margin: 0 25px;
+  }
+}

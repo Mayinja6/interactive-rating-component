@@ -1,0 +1,102 @@
+.feedbackForm {
+  width: 380px;
+  padding: 20px;
+  background: hsl(212, 20%, 13%);
+  border-radius: 12px;
+}
+
+.feedbackForm_star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background: hsl(212, 15%, 19%);
+}
+
+.feedbackForm_title {
+  font-size: 1.7rem;
+  font-weight: normal;
+  margin: 25px 0 10px;
+}
+
+.feedbackForm_text {
+  font-weight: 300;
+  opacity: 80%;
+}
+
+.feedbackForm_rating_container {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feedbackForm_rating_option {
+  transition: var(--transition);
+  cursor: pointer;
+  background: hsl(212, 15%, 19%);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.feedbackForm_rating_option.active {
+  background: var(--light_grey);
+}
+
+.feedbackForm_rating_option.active:hover {
+  background: hsl(25, 56%, 57%);
+}
+
+.feedbackForm_rating_option:hover {
+  transition: var(--transition);
+  background: var(--orange);
+}
+
+.feedbackForm_button {
+  transition: var(--transition);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 0;
+  background: var(--orange);
+}
+
+.feedbackForm_button span {
+  transition: var(--transition);
+  color: var(--white);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.feedbackForm_button:hover {
+  background: var(--white);
+}
+
+.feedbackForm_button:hover * {
+  color: var(--orange);
+}
+
+@media (max-width: 400px) {
+  .feedbackForm {
+    width: 100%;
+    margin: 0 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .feedbackForm_rating_container {
+    margin: 25px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}

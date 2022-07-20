@@ -1,0 +1,55 @@
+:root {
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --light_grey: hsl(217, 12%, 63%);
+  --medium_grey: hsl(216, 12%, 54%);
+  --dark_blue: hsl(213, 19%, 18%);
+  --very_dark_blue: hsl(216, 12%, 8%);
+  --attribution: hsl(228, 45%, 44%);
+
+  /* Typography */
+  --font_size: 15px;
+  --font_family: "Overpass", "outfit";
+  --transition: 0.3s all ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.feedback_container {
+  width: 100%;
+  height: 100vh;
+  font-family: var(--font_family);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--very_dark_blue);
+  color: var(--white);
+}
+
+.attribution {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 400px) {
+  .attribution {
+    display: none;
+  }
+}
